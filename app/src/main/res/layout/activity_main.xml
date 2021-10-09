@@ -22,7 +22,7 @@
 
         <ImageView
             android:id="@+id/imageRed1"
-            android:tag="1"
+            android:tag="0"
             android:onClick="dropIn"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -35,7 +35,7 @@
 
         <ImageView
             android:id="@+id/imageRed2"
-            android:tag="2"
+            android:tag="1"
             android:onClick="dropIn"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -49,7 +49,7 @@
         <ImageView
             android:id="@+id/imageRed3"
             android:onClick="dropIn"
-            android:tag="3"
+            android:tag="2"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="10dp"
@@ -61,7 +61,7 @@
         <ImageView
             android:id="@+id/imageRed4"
             android:onClick="dropIn"
-            android:tag="4"
+            android:tag="3"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="10dp"
@@ -74,7 +74,7 @@
         <ImageView
             android:id="@+id/imageRed5"
             android:onClick="dropIn"
-            android:tag="5"
+            android:tag="4"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="10dp"
@@ -88,7 +88,7 @@
         <ImageView
             android:id="@+id/imageRed6"
             android:onClick="dropIn"
-            android:tag="6"
+            android:tag="5"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="10dp"
@@ -102,7 +102,7 @@
         <ImageView
             android:id="@+id/imageRed7"
             android:onClick="dropIn"
-            android:tag="7"
+            android:tag="6"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="10dp"
@@ -115,7 +115,7 @@
 
         <ImageView
             android:id="@+id/imageRed8"
-            android:tag="8"
+            android:tag="7"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="10dp"
@@ -131,7 +131,7 @@
         <ImageView
             android:id="@+id/imageRed9"
             android:onClick="dropIn"
-            android:tag="9"
+            android:tag="8"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="10dp"
@@ -144,5 +144,35 @@
 
 
     </androidx.gridlayout.widget.GridLayout>
+
+    <ImageView
+        android:id="@+id/restartImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:onClick="reloadGame"
+        android:translationY="-1000dp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.438"
+        app:srcCompat="@drawable/reload" />
+
+    <TextView
+        android:id="@+id/winnerTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="sans-serif-medium"
+        android:textAllCaps="false"
+        android:textColor="@color/purple_500"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
